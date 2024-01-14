@@ -9,23 +9,23 @@ MyUsername
 MyPassword
 
 Features:
-  Automated login to university portal
-  Navigation through co-op job pages
-  Extraction of job information based on specified criteria, currently using regex but many alternative methods avalible
-  Storage of relevant job information in text files
+- Automated login to university portal
+- Navigation through co-op job pages
+- Extraction of job information based on specified criteria, currently using regex but many alternative methods avalible
+- Storage of relevant job information in text files
 
 Dependencies:
-  Python
-  Selenium
-  WebDriver (Chrome)
-  dotenv
+  - Python
+  - Selenium
+  - WebDriver (Chrome)
+  - dotenv
   
 
 Usage:
-  Set up a virtual environment and install dependencies from requirements.txt.
-  make sure to activate the virtual environment
-  Create a .env file with your login credentials.
-  Run the script to automate the job matching process.
+  - Set up a virtual environment and install dependencies from requirements.txt.
+  - make sure to activate the virtual environment
+  - Create a .env file with your login credentials.
+  - Run the script to automate the job matching process.
 
 More requirerements:
   global variables that need customization are at the top of the file
