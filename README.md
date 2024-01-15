@@ -28,6 +28,14 @@ Usage:
   - Create a .env file with your login credentials.
   - Run the script to automate the job matching process.
 
+how to setup venv:
+- python -m venv venv               # or python3, depending on your setup
+- python -m venv venv               # or python3, depending on your setup
+- venv/bin/activate                 # or activate.bat on Windows
+- pip install -r requirements.txt 
+- #should be good to run now with: python -u filename.py
+
+
 More requirerements:
   - global variables that need customization are at the top of the file
   - please enter your login credentionals into a dont env file with approriate varibles before running
