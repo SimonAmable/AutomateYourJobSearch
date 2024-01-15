@@ -19,7 +19,6 @@ myUsername = os.getenv("MY_USERNAME")
 myPassword = os.getenv("MY_PASSWORD")
 regexPattern=r'\b(?:selenium|automation|automate|automating)\b' #
 
-
 def initialize_driver():
     driver = webdriver.Chrome()
     driver.set_window_size(784, 816)
@@ -82,7 +81,10 @@ def process_job_page(driver, link_element, pattern):
     driver.switch_to.window(driver.window_handles[0])
 
 def save_job_description(description, file_name):
-    folder_path = r"C:\Users\simon\Desktop\mycoolshit\SeleniumCoop\venvForSeleniumCoop\prospectJobs"
+    folder_path = os.path.join(os.getcwd(), 'prospectJobs')  # Save in the current working directory
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)  # Create the directory if it doesn't exist
+    
     file_name = file_name.replace(' ', '_').replace('/', '')
     file_path = os.path.join(folder_path, f"{file_name}.txt")
     
@@ -90,7 +92,6 @@ def save_job_description(description, file_name):
         file.write(description)
     
     print(f"The job description has been saved to {file_path}")
-
 
 
 def main():
