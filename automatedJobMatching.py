@@ -82,7 +82,7 @@ def process_job_page(driver, link_element, pattern):
     driver.switch_to.window(driver.window_handles[0])
 
 def save_job_description(description, file_name):
-    folder_path = r"C:\Users\simon\Desktop\mycoolshit\SeleniumCoop\venvForSeleniumCoop\propectJobs"
+    folder_path = r"C:\Users\simon\Desktop\mycoolshit\SeleniumCoop\venvForSeleniumCoop\prospectJobs"
     file_name = file_name.replace(' ', '_').replace('/', '')
     file_path = os.path.join(folder_path, f"{file_name}.txt")
     
