@@ -1,5 +1,5 @@
 # AutomateYourJobSearch
-- Automating the entire job application process on the Carleton Co-Op portal with Python and the Selenium web driver
+- Automating the job search process on the Carleton Co-Op portal with Python and the Selenium web driver
 
 - automatedJobMatcing.py  is a python script to find all revelent jobs on the Carleton Co-Op portal with selenium, and then extract the data to a txt file name IDed from job position for later use.
 
